@@ -1,0 +1,39 @@
+================================================================
+Vegetable Quality Model - Folder Training
+================================================================
+Training folder : C:\Users\DEEPAK NG\OneDrive\Desktop\vegetable-quality-detection\train_uploads
+Dataset root    : C:\Users\DEEPAK NG\OneDrive\Desktop\vegetable-quality-detection\train_uploads\vegi
+Image count     : 913
+Epochs (Phase 1): 15  (+ 10 fine-tune epochs)
+Model output    : C:\Users\DEEPAK NG\OneDrive\Desktop\vegetable-quality-detection\backend\trained_model\vegetable_quality_model.keras
+----------------------------------------------------------------
+Preparing dataset (copying images into train_prepared)...
+Detected classes (4): ['Cabbage_Fresh', 'Carrot_Fresh', 'Potato_Fresh', 'Tomato_Fresh']
+Backed up existing model -> C:\Users\DEEPAK NG\OneDrive\Desktop\vegetable-quality-detection\backend\trained_model\vegetable_quality_model.backup.keras
+
+Training started in background. Streaming logs...
+
+Loading dataset...
+Found 731 images belonging to 4 classes.
+Found 182 images belonging to 4 classes.
+Classes (4): ['Cabbage_Fresh', 'Carrot_Fresh', 'Potato_Fresh', 'Tomato_Fresh']
+Train samples: 731 | Val samples: 182
+
+Phase 1: Training top layers (15 epochs)...
+[Phase 1] Epoch 1/15 — loss: 0.2048 | acc: 92.5% | val_acc: 98.9%
+[Phase 1] Epoch 2/15 — loss: 0.0078 | acc: 99.9% | val_acc: 100.0%
+[Phase 1] Epoch 3/15 — loss: 0.0028 | acc: 100.0% | val_acc: 100.0%
+[Phase 1] Epoch 4/15 — loss: 0.0020 | acc: 100.0% | val_acc: 100.0%
+[Phase 1] Epoch 5/15 — loss: 0.0032 | acc: 100.0% | val_acc: 98.9%
+[Phase 1] Epoch 6/15 — loss: 0.0028 | acc: 100.0% | val_acc: 98.9%
+[Phase 1] Epoch 7/15 — loss: 0.0054 | acc: 99.7% | val_acc: 100.0%
+[Phase 1] Epoch 8/15 — loss: 0.0008 | acc: 100.0% | val_acc: 99.5%
+
+Phase 2: Fine-tuning last 30 layers...
+[Phase 2] Epoch 1/10 — loss: 0.0532 | acc: 98.2% | val_acc: 100.0%
+[Phase 2] Epoch 2/10 — loss: 0.0370 | acc: 98.5% | val_acc: 99.5%
+[Phase 2] Epoch 3/10 — loss: 0.0194 | acc: 99.5% | val_acc: 99.5%
+[Phase 2] Epoch 4/10 — loss: 0.0168 | acc: 99.5% | val_acc: 100.0%
+
+Model saved: trained_model/vegetable_quality_model.keras
+Class map saved: trained_model/vegetable_quality_model_classes.txt
